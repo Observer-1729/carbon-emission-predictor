@@ -23,130 +23,144 @@ This project is a machine learning-powered CO₂ emission forecasting system des
 ```bash
 git clone https://github.com/yourusername/carbon-emission-predictor.git
 cd carbon-emission-predictor
-2️⃣ (Optional) Create a Virtual Environment
-bash
-Copy
-Edit
+```
+### 2️⃣ (Optional) Create a Virtual Environment
+
+```bash
+
 python -m venv venv
+```
 Activate on Windows:
 
-bash
-Copy
-Edit
+```bash
+
 venv\Scripts\activate
+```
 Activate on Mac/Linux:
 
-bash
-Copy
-Edit
+```bash
+
 source venv/bin/activate
-3️⃣ Install Dependencies
-bash
-Copy
-Edit
+```
+### 3️⃣ Install Dependencies
+``` bash
+
 pip install -r requirements.txt
-4️⃣ Run the Streamlit App
-bash
-Copy
-Edit
+```
+
+### 4️⃣ Run the Streamlit App
+```bash
+
 streamlit run App.py
+```
+
 The app will launch in your browser at http://localhost:8501.
 
-⚙️ How It Works
-User Uploads Dataset: Supports CSV and XLSX files.
+---
 
-Preprocessing:
+# ⚙️ How It Works
+## User Uploads Dataset: Supports CSV files.
 
-Converts Excel to CSV if needed
+### Preprocessing:
 
-Creates lag features and rolling averages
+- Creates lag features and rolling averages
 
-Scales input using StandardScaler
+- Scales input using StandardScaler
 
-Model Training:
+### Model Training:
 
-XGBoost Regressor with GridSearchCV optimization
+- XGBoost Regressor with GridSearchCV optimization
 
-Automatically detects the last column as the target
+- Automatically detects the last column as the target
 
-Prediction & Evaluation:
+### Prediction & Evaluation:
 
-Predicts CO₂ emissions
+- Predicts CO₂ emissions
 
-Calculates RMSE and R²
+- Calculates RMSE and R²
 
-Shows plots and lets users download results
+- Shows plots and lets users download results
 
-📁 Input Format
-The input file should:
+---
 
-Contain timestamped or sequential data
+# 📁 Input Format
+### The input file should:
 
-Have numerical columns with the last column as the target (CO₂ emissions)
+- Contain timestamped or sequential data
 
-📊 Example Metrics
-Metric	Value (Synthetic Data)
-RMSE	~2.21
-R² Score	~0.93
+- Have numerical columns with the last column as the target (CO₂ emissions)
 
-🧪 Tech Stack
-Frontend: Streamlit
+# 🧪 Tech Stack
+- Frontend: Streamlit
 
-Backend/ML: Python, XGBoost, scikit-learn, pandas, numpy
+- Backend/ML: Python, XGBoost, scikit-learn, pandas, numpy
 
-Visualization: Matplotlib
+- Visualization: Matplotlib
 
-Input/Output: CSV files
+- Input/Output: CSV files
 
-📡 Deployment
-✅ Run Locally or on Streamlit Cloud
-Push the repo to GitHub
+---
 
-Go to Streamlit Cloud
+# 📡 Deployment
+## ✅ Run Locally or on Streamlit Cloud
+- Push the repo to GitHub
 
-Click New App, select the repo and App.py
+- Go to Streamlit Cloud
 
-Click Deploy 🚀
+- Click New App, select the repo and App.py
 
-🎯 Use Cases
-🌱 Environmental Engineers
+- Click Deploy 🚀
 
-🏭 Industrial Emissions Monitoring
+---
 
-🔍 Regulatory Compliance & Audits
+# 🎯 Use Cases
+- 🌱 Environmental Engineers
 
-📊 Academic Projects on Carbon Forecasting
+- 🏭 Industrial Emissions Monitoring
 
-💼 Sustainable Manufacturing Initiatives
+- 🔍 Regulatory Compliance & Audits
 
-📦 Requirements
-Install with:
+- 📊 Academic Projects on Carbon Forecasting
 
-bash
-Copy
-Edit
+- 💼 Sustainable Manufacturing Initiatives
+
+---
+
+# 📦 Requirements
+- Install with:
+
+```bash
+
 pip install -r requirements.txt
-Main Libraries:
+```
 
-streamlit
+### Main Libraries:
 
-pandas
+- streamlit
 
-numpy
+- pandas
 
-scikit-learn
+- numpy
 
-xgboost
+- scikit-learn
 
-matplotlib
+- xgboost
+
+- matplotlib
+
+---
 
 
-📈 Future Improvements
-✅ Real industrial dataset support
-✅ Live dashboard with time-series updates
-✅ Anomaly detection for emission spikes
-✅ Integration with sensor/IoT data
-✅ Export results to PDF reports
+# 📈 Future Improvements
+- ✅ Real industrial dataset support
+- ✅ Live dashboard with time-series updates
+- ✅ Anomaly detection for emission spikes
+- ✅ Integration with sensor/IoT data
+- ✅ Export results to PDF reports
 
-🔚 Conclusion
+---
+
+# 🔚 Conclusion
 This forecasting app gives industries a practical, AI-driven way to monitor and predict CO₂ emissions using familiar data inputs. With real-time model training, feature engineering, and powerful visualizations, it helps companies take the first step toward data-driven emission reduction strategies. 🌍♻️
+
+---
