@@ -7,7 +7,7 @@ from sklearn.metrics import mean_squared_error, r2_score
 import matplotlib.pyplot as plt
 import xgboost as xgb
 
-st.title("Carbon Emission Forecasting (XGBoost)")
+st.title("Carbon Emission Forecasting")
 
 uploaded_file = st.file_uploader("Upload your dataset (.csv)", type=["csv"])
 
